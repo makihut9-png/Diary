@@ -197,6 +197,15 @@ footer p {
     padding: 1.5rem;
   }
 
+  img {
+    width: 250px;
+  }
+
+  main {
+    gap: 1rem;
+  }
+}
+
   h1 {
     font-size: 1.8rem;
   }
