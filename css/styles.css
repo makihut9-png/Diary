@@ -196,4 +196,21 @@ footer p {
   section {
     padding: 1.5rem;
   }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  main {
+    margin: 0 auto 1rem;
+    gap: 1rem;
+  }
 }
