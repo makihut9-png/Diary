@@ -22,18 +22,24 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.18), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.14), transparent 25%),
-    linear-gradient(180deg, #020617 0%, #0c1227 100%);
   color: var(--text);
 }
+
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.04), transparent 35%);
+    background: radial-gradient(circle at top, rgba(124, 58, 237, 0.3), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.14), transparent 25%),
+    linear-gradient(180deg, #020617 0%, #0c1227 100%);
+  opacity: 1;
+  animation: reveal 4s ease forwards;
   pointer-events: none;
+}
+@keyframes reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 body::after {
@@ -64,7 +70,7 @@ body::after {
   background-repeat: repeat;
   background-size: 200px 180px;
   background-position: 0 0;
-  animation: float 40s linear infinite, twinkle 3s ease-in-out infinite;
+  animation: float 10s linear infinite, twinkle 3s ease-in-out infinite;
   pointer-events: none;
   z-index: 0;
 }
@@ -73,6 +79,7 @@ body::after {
   0% { background-position: 0 0; }
   100% { background-position: 0 -180px; }
 }
+
 
 body > * {
   position: relative;
@@ -222,4 +229,3 @@ footer p {
     margin: 0 auto 1rem;
     gap: 1rem;
   }
-}
