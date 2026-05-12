@@ -1,38 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>My Diary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario personal con metas, aprendizajes, retos e ideas del día.">
+    <title>Mi Diario</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>My Diary</h1>
+        <h1>Mi Diario</h1>
+        <nav>
+            <a href="#today">Aprendiendo</a>
+            <a href="#priorities">Prioridades</a>
+            <a href="#retos">Retos</a>
+            <a href="#notas">Notas rápidas</a>
+            <a href="#contacto">Contáctame</a>
+            <a href="#entrada">Sugerencias</a>
+        </nav>
         <section>
-            <img src="https://images8.alphacoders.com/140/thumb-1920-1407112.jpg"  alt="Diana de pragmata Hackeando">
+            <img src="https://images8.alphacoders.com/140/thumb-1920-1407112.jpg" alt="Escena creativa para diario personal">
         </section>
     </header>
     <main>
-        <section>
-            <h2>Priorities</h2>
+        <section id="today">
+            <div class="entry-header">
+                <h2>Aprendiendo:</h2>
+            </div>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GitHub</li>
+                </ol>
+            <p>Registrar avances pequeños cada día ayuda a mantener constancia y motivación.</p>
+            <figure>
+                <figcaption>-Un momento de enfoque:</figcaption>
+            </figure>
+            <blockquote>"Aprendí que avanzar poco a poco es mejor que no avanzar"</blockquote>
+        </section>
+        <section id="priorities">
+            <h2>Prioridades:</h2>
             <ol>
-                <li>Make a daily commit</li>
-                <li>Practice every day</li>
-                <li>Frustration Resilience</li>
+                <li>Hacer un commit diario</li>
+                <li>Practicar todos los días</li>
+                <li>Resiliencia frente a la frustración</li>
+                <li>No olvidar tomar agua</li>
+                <li>Celebrar pequeños logros</li>
+                <li>No rendirse</li>
             </ol>
         </section>
-        <section>
-            <h2>Tools to Master</h2>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
+        <section id="retos">
+            <h2>Retos:</h2>
+            <details>
+                <summary>Ver reto del día</summary>
+                <p>Seguir un plan de estudio diario y revisar qué se aprendió.</p>
+            </details>
+            <details>
+                <summary>Otra idea</summary>
+                <p>Crear una pequeña meta semanal y medir el progreso.</p>
+            </details>
         </section>
+        <aside id="notas">
+            <h2>Notas rápidas:</h2>
+            <ul>
+                <li>Revisa tus metas al final del día</li>
+                <li>Guarda ideas para mejorar tu diario</li>
+                <li>Comparte tu progreso con amigos o en redes sociales</li>
+            </ul>
+        </aside>
+        <aside id="contacto">
+            <h2>Contáctame:</h2>
+            <ul>
+                <li>Instagram</li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/960px-Instagram_icon.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20200512141346" alt="Instagram">
+                <li>GitHub</li>
+                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub">
+                <li>Telegram</li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/960px-Telegram_2019_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Telegram">
+            </ul>
+        </aside>
     </main>
+        <article id="entrada">
+            <h2>Sugerencias:</h2>
+            <form>
+                <label for="entrada-texto">"Ayudame a mejorar"</label>
+                <textarea id="entrada-texto" rows="5" placeholder="Escribe tu sugerencia..."></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+        </article>
     <footer>
-        <p>&copy; 2026 Page created by Maki Hut</p>     
+        <p>&copy; 2026 Pagina creada por Maki Hut</p>     
     </footer>
 </body> 
 </html>  
