@@ -265,6 +265,7 @@ details p {
 
 main {
   margin: 0 auto 2rem;
+  padding: 1rem;
   display: grid;
   gap: 1.5rem;
   align-items: stretch;
